@@ -12,6 +12,14 @@
 import Foundation
 import CoreGraphics
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
+#if canImport(Cocoa)
+import Cocoa
+#endif
+
 open class PieChartRenderer: DataRenderer
 {
     @objc open weak var chart: PieChartView?
@@ -880,9 +888,7 @@ open class PieChartRenderer: DataRenderer
 
         // Prepend selected slices before the already rendered unselected ones.
         // NOTE: - This relies on drawDataSet() being called before drawHighlighted in PieChartView.
-        if !accessibleChartElements.isEmpty {
-            accessibleChartElements.insert(contentsOf: highlightedAccessibleElements, at: 1)
-        }
+        accessibleChartElements.insert(contentsOf: highlightedAccessibleElements, at: 1)
 
         context.restoreGState()
     }

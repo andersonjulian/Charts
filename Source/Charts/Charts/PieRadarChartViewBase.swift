@@ -11,6 +11,7 @@
 
 import Foundation
 import CoreGraphics
+import QuartzCore
 
 /// Base class of PieChartView and RadarChartView.
 open class PieRadarChartViewBase: ChartViewBase

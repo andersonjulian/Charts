@@ -11,6 +11,7 @@
 
 import Foundation
 import Charts
+import UIKit
 
 open class BalloonMarker: MarkerImage
 {

@@ -6,6 +6,7 @@
 
 import Foundation
 import Charts
+import UIKit
 
 open class XYMarkerView: BalloonMarker
 {
