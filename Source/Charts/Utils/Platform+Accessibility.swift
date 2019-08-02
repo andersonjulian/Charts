@@ -92,7 +92,7 @@ extension NSUIView
 #endif
 
 #if os(OSX)
-
+import Cocoa
 internal func accessibilityPostLayoutChangedNotification(withElement element: Any? = nil)
 {
     guard let validElement = element else { return }
