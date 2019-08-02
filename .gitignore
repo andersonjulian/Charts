@@ -72,3 +72,5 @@ fastlane/test_output
 Carthage
 Charts.framework.zip
 ChartsRealm.framework.zip
+.swiftpm/xcode/package.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
